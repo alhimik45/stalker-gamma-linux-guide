@@ -44,7 +44,7 @@ When it tells you to run Anomaly for the set-up, use your preferred method, I re
 &nbsp;- dx8vb  
 &nbsp;- dxvk <sub><sup>**(Major performance boost, but you need a DXVK-marked driver, if you are unsure, install this seperately from the other DLLs so they don't fail.)**</sup></sub><br>
 &nbsp;- quartz  
-&nbsp;- vcrun2019  
+&nbsp;- vcrun2019  (or vcrun2022 if ModOrganizer fails to start with errors about MSVCP140.dll loading in console)
 4. Make sure DXVK and VKD3D are enabled, Esync *may* cause issues, disable it if unsure, Fsync may or may not work on some Wine versions.
 
 Then you can run the installer with:
