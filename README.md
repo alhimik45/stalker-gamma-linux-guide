@@ -99,6 +99,17 @@ Some issues you may or may not encounter:
   * 189- Beef's NVG - theRealBeef
   * 190- Screen Space Shaders - Ascii1457
   * 290- Atmospherics Shaders Weathers and Reshade - Hippobot
+
+**4. ModOrganizer crashes when you try to browse filesystem to select anomaly folder**
+  * Reason is unknown, but workaround exists
+  * Open file `<GAMMA path>/plugins/basic_games/games/game_stalkeranomaly.py`
+  * Add next lines to the end, replace path with your wine path to the anomaly folder (pay attention to whitespaces at the beginning of the lines, they are important)
+```python
+    def detectGame(self):
+        self.setGamePath(r"Z:\home\username\anomaly")
+```
+  * After change restart MO. Anomaly will be in the list of autodetected games and you don't need to use file browse
+  
   <br>
 <h3>By now, you should have a playable S.T.A.L.K.E.R. - G.A.M.M.A. on Linux.</h3>
   <br>
